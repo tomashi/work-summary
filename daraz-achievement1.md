@@ -266,12 +266,14 @@
 
 ### 【最终优化结果】
 
-LCP：6500ms -> 1600ms 降幅为 406%
-秒开率：接近 0% -> 25% 增幅为 25%
+&emsp;&emsp;LCP：6500ms -> 1600ms 降幅为 406%
+
+&emsp;&emsp;秒开率：接近 0% -> 25% 增幅为 25%
 
 ## 总结
 
 **要尽可能看到真实用户的表现**
+
 ![image](https://img.alicdn.com/imgextra/i4/O1CN01YCfn5p1Mlb9zmKQLi_!!6000000001475-0-tps-2458-92.jpg)
 ![image](https://img.alicdn.com/imgextra/i1/O1CN013yUsDg1zsFvpSu9dK_!!6000000006769-0-tps-2466-114.jpg)
 ![image](https://img.alicdn.com/imgextra/i3/O1CN01OkhwKS1UbzmY9lfMF_!!6000000002537-0-tps-2458-108.jpg)
