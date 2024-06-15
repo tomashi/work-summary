@@ -1,6 +1,29 @@
 # 前端基础建设
 
-### 开发组合
+### i18n多语言需求提效方案
 
-![image](https://img.alicdn.com/imgextra/i4/O1CN012YDCIG1UjmW3LfE5f_!!6000000002554-0-tps-1538-1706.jpg)
+&emsp;&emsp;**过去的多语言方案：**
 
+![image](https://img.alicdn.com/imgextra/i2/O1CN01CxQRW91HKVenYSSO3_!!6000000000739-0-tps-2410-1828.jpg)
+
+&emsp;&emsp;通过美杜莎（阿里内部的多语言配置平台）node 程序，从代码中提取引用的 key，根据 key 在本地项目中生成一个多语言 json 文件，json 文件会和项目源码合并打包发布到线上
+
+&emsp;&emsp;这种方式会带来 2 个问题：
+
+&emsp;&emsp;1、运营同学想改页面上的文案，但是他并不知道这个文案对应的多语言 key 是那个，每次都要问开发同学，然后开发同学又专门翻代码去查这个 key；或者开发同学每开发一个项目时，要将该项目用到的所有 key 及对应的文案、截图做一个 excel 表格，当运营同学想改文案时，自己去查阅这个表格，开发同学在迭代项目时也要记得同时维护这个表格
+
+![image](https://img.alicdn.com/imgextra/i4/O1CN01XXJTLI1gJ0kwX4k4J_!!6000000004120-0-tps-2722-1810.jpg)
+
+&emsp;&emsp;2、由于多语言的json文件是和源码在一起的，运营同学每改一次多语言配置，开发同学还得新建一个迭代，把新的多语言json文件拉到本地，然后发布一次线上
+
+&emsp;&emsp;**优化后的多语言方案：**
+
+&emsp;&emsp;关于问题1，运营同学查询多语言key的解法
+
+&emsp;&emsp;在一次与外部团队的日常交流中，发现他们新开发了一个浏览器多语言插件，开发同学在源码中按照特定的方式引入多语言key后，将这个插件给到运营同学，安装在浏览器上并打开后，可以在页面上直接显示出对应文案的多语言配置地址，无需再去问相关开发同学或查询excel表格
+
+![image](https://img.alicdn.com/imgextra/i4/O1CN01Xe1CnS28m9C39NzaU_!!6000000007974-0-tps-3308-2158.jpg)
+
+&emsp;&emsp;关于问题2，每次改多语言文案都要发布一次页面的解法
+
+&emsp;&emsp;
