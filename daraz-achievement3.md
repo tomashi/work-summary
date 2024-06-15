@@ -1,55 +1,62 @@
-# 商品详情页模版编辑器
+# SSU 入驻流程 业务数据分析
 
-### 事情的起因
+（数据取自 2023.8.18 - 8.31 from NP&MM）
 
-![image](https://img.alicdn.com/imgextra/i4/O1CN012YDCIG1UjmW3LfE5f_!!6000000002554-0-tps-1538-1706.jpg)
+### 整体数据
 
-&emsp;&emsp;一次在逛 Daraz App 时，连续点开了好几个推荐商品，发现他们都仅有几张主图，没有对商品的详细描述，例如商品的材质，使用了什么新技术，比其他商品优越在哪里等等
+![image](https://img.alicdn.com/imgextra/i3/O1CN01kdKW761KLpeAn4PDX_!!6000000001148-0-tps-2970-590.jpg)
 
-&emsp;&emsp;平日里看惯了国内花里胡哨的商品详情，突然就好奇为什么巴基斯坦的卖家会这样卖东西，难道他们的买家光看看主图就会下单？
+### 业务流程
 
-&emsp;&emsp;经过一番调查，发现买家们对这种商品也并不买账，同类产品，只有主图没有详情介绍的商品，销量都很惨淡
+![image](https://img.alicdn.com/imgextra/i1/O1CN01Ctawhi1dmphGWN887_!!6000000003779-0-tps-2674-504.jpg)
+![image](https://img.alicdn.com/imgextra/i3/O1CN01oELcaI1wU28edSKVI_!!6000000006310-0-tps-2602-1408.jpg)
 
-&emsp;&emsp;直到一次周会，从 CTO 口中了解到了一些情况，原来 Daraz 大部分的 GMV 都是靠少量的大卖家撑起来的，人数众多的的中小卖家，反而只贡献了小部分的 GMV，除了货源、渠道等硬性原因外，很多中小卖家缺乏电商的基本常识也是造成这种情况的重要原因之一
+### 第一步 关键因素分析
 
-&emsp;&emsp;因此，如果能帮中小卖家补上商品详情页设计相关的常识，那么商品的销量肯定会有所提升
+![image](https://img.alicdn.com/imgextra/i3/O1CN01XkWzmz1Ros4NFyc2X_!!6000000002159-0-tps-3274-1976.jpg)
+![image](https://img.alicdn.com/imgextra/i3/O1CN01v4tZOh1MfBcFYlXTD_!!6000000001461-0-tps-2962-1858.jpg)
+![image](https://img.alicdn.com/imgextra/i4/O1CN01In9zwx1qtmiHIWwWf_!!6000000005554-0-tps-2992-1874.jpg)
+![image](https://img.alicdn.com/imgextra/i1/O1CN01IbrMBS1ghk8rjXcEV_!!6000000004174-0-tps-1500-502.jpg)
+![image](https://img.alicdn.com/imgextra/i3/O1CN01x2I4ha1MJf079IAa3_!!6000000001414-0-tps-2976-1114.jpg)
 
-&emsp;&emsp;思来想去，最后我觉得可以采取模版这一办法，直接将类似产品的商品详情模版放上去，商家将模版里的图片、文本换成自己产品的就可以了，同时模版也可以启发商家，让商家想出比以往更多的介绍方式
+### 第二步 关键因素分析
 
-### 编辑器实现方案
+![image](https://img.alicdn.com/imgextra/i4/O1CN01DoBQVT1MAxTV3cBDd_!!6000000001395-0-tps-3240-1976.jpg)
+![image](https://img.alicdn.com/imgextra/i1/O1CN013kFecg1nZE5X7qUp8_!!6000000005103-0-tps-2994-1752.jpg)
+![image](https://img.alicdn.com/imgextra/i4/O1CN01yT2UjG1jQkI5k7H9g_!!6000000004543-0-tps-1500-409.jpg)
+![image](https://img.alicdn.com/imgextra/i4/O1CN01hpY9kD1UvgoS8Ixot_!!6000000002580-0-tps-3292-1786.jpg)
+![image](https://img.alicdn.com/imgextra/i3/O1CN01bVoDk61sG3abbO5pD_!!6000000005738-0-tps-3300-1810.jpg)
+![image](https://img.alicdn.com/imgextra/i2/O1CN01aYcppI1T0bpuTpwSu_!!6000000002320-0-tps-3286-1030.jpg)
 
-&emsp;&emsp;横向对比了国内外近十款电商商家工作台的商品详情页编辑器，结合 Daraz 的情况，最终的成品如下：
+### 第三步-企业 关键因素分析
 
-&emsp;&emsp;在商品编辑页拥有一个所见即所得的详情页展示区域，以及编辑器入口
+![image](https://img.alicdn.com/imgextra/i3/O1CN01jd2U8R1SRnjaguCu3_!!6000000002244-0-tps-1708-1978.jpg)
+![image](https://img.alicdn.com/imgextra/i4/O1CN01ndpLkZ27aPQU5ijNJ_!!6000000007813-0-tps-3040-1782.jpg)
+![image](https://img.alicdn.com/imgextra/i1/O1CN01YVZqLY1hyWGVknLcJ_!!6000000004346-0-tps-1500-317.jpg)
+![image](https://img.alicdn.com/imgextra/i2/O1CN01HzPFtT1k3fxKBjTTV_!!6000000004628-0-tps-1500-865.jpg)
+![image](https://img.alicdn.com/imgextra/i2/O1CN01Ra6N62270gX5kXViQ_!!6000000007735-0-tps-1500-432.jpg)
 
-![image](https://img.alicdn.com/imgextra/i4/O1CN01VyDbSO1LhBjIeNkoA_!!6000000001330-0-tps-3308-2158.jpg)
+### 第三步-个人 关键因素分析
 
-&emsp;&emsp;编辑器中可以选择各类商品模版
+![image](https://img.alicdn.com/imgextra/i4/O1CN01WjW8y81Oh8XDbG62p_!!6000000001736-0-tps-1288-1584.jpg)
+![image](https://img.alicdn.com/imgextra/i3/O1CN01uuCIGu1wqTXqtuQfT_!!6000000006359-0-tps-1500-889.jpg)
+![image](https://img.alicdn.com/imgextra/i2/O1CN0102wRcr1ejSOMYtqjD_!!6000000003907-0-tps-1500-311.jpg)
+![image](https://img.alicdn.com/imgextra/i3/O1CN01pNFTX91CTbRMweN6B_!!6000000000082-0-tps-1500-762.jpg)
+![image](https://img.alicdn.com/imgextra/i4/O1CN01bbLsWw1mzVC7aOO4z_!!6000000005025-0-tps-1500-859.jpg)
+![image](https://img.alicdn.com/imgextra/i1/O1CN01n7NKTf24qwsibV1uw_!!6000000007443-0-tps-1500-479.jpg)
 
-![image](https://img.alicdn.com/imgextra/i2/O1CN01sWijx81mo3IGqByo1_!!6000000005000-0-tps-3308-2158.jpg)
+### SSU 表单月度数据
 
-&emsp;&emsp;可以改动模版对应的图片及文本
+![image](https://gw.alicdn.com/imgextra/i1/O1CN0185u7sa1agvk6L4TrR_!!6000000003360-0-tps-2556-1142.jpg)
 
-![image](https://img.alicdn.com/imgextra/i3/O1CN01oK0QpE26Q2qbvyExr_!!6000000007655-0-tps-3308-2158.jpg)
+### SSU 表单优化结果【补充】
 
-&emsp;&emsp;可以自由添加单个组件，定制个性化详情页
+&emsp;&emsp;本文主要是展示对表单进行数据分析的方式，会根据埋点或监控平台收集到的数据对表单、审核流程等进行分析
 
-![image](https://img.alicdn.com/imgextra/i2/O1CN01nAQxfD1KKur9xFk5b_!!6000000001146-0-tps-3308-2158.jpg)
+&emsp;&emsp;具体实施的优化手段比较零散，基本是线下讨论，因此这里无法放上截图给大家看
 
-&emsp;&emsp;可以自由添加纯文本或者纯图片
+&emsp;&emsp;（优化手段包括：**输入方式优化、错误提示语优化、必填提醒、更容易理解的 UI 布局、填写教程、小二的审核表单优化、小二审核流程培训**等等）
 
-![image](https://img.alicdn.com/imgextra/i1/O1CN01oIsFxW27ezNzKu5AL_!!6000000007823-0-tps-3308-2158.jpg)
+![image](https://img.alicdn.com/imgextra/i4/O1CN01sBO6S91j7y3GYbQ2G_!!6000000004502-0-tps-1417-488.jpg)
 
-### 成交率 A/B测试数据
-
-![image](https://img.alicdn.com/imgextra/i4/O1CN01rEABaq1Kl1QnhqhUO_!!6000000001203-0-tps-3274-1788.jpg)
-
-![image](https://img.alicdn.com/imgextra/i4/O1CN01CHBl5F1VWKV1dD64a_!!6000000002660-0-tps-986-1686.jpg)
-
-&emsp;&emsp;经过线上1%流量的验证，发现Mobiles & Tablets和Sports & Outdoors类别的成交率增长明显，分别从1.79%提升至3.61%，2.19%提升至4.15%
-
-&emsp;&emsp;同时也发现Fashion类的成交率，从1.85%下降至1.18%
-
-&emsp;&emsp;Mobiles & Tablets和Fashion类别作为全平台GMV贡献占比最高的2大类，却有着截然不同的效果，可能和商品的属性有着很大关联（个人猜测：电子类产品，如果没有详细的商品参数介绍、应用场景，就很难评估这个商品是否值得购买；而时尚类的商品主要用途为外观，因此看下主图就能知道外观如何，再看下面料材质什么的，就可以大差不大了）
-
-&emsp;&emsp;因此，通过A/B测试的结果，就可以判断，如果用户上传的是电子类或者户外类等有明显成交率提升的类别，就可以推荐用户使用新的模版编辑器，如果是时尚等成交率下降的类别，就推荐默认编辑器
+&emsp;&emsp;最终结果，入驻域的北极星指标，7 天入驻率从 6.61%左右，提升至 10.70%
