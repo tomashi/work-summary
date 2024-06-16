@@ -73,6 +73,50 @@
 
 &emsp;&emsp;虽说 2.0 平台还无法满足前端同学理想中的全部功能，但是久旱逢甘霖，对比 1.0 所带来的提升，已经足够我们花费时间迁移过去了。在我负责域的页面实验成功后，团队内的同学也纷纷迁移到了 2.0 平台
 
-### 三、迁移至 Lago 发布平台
+## 三、迁移至 Lago 发布平台
 
-&emsp;&emsp;国际化电商场景下，国内领先的发布平台 Lago 出现了
+&emsp;&emsp;上文叙述到，DaDa2.0 平台虽然比 1.0 提升了不少，但是仍然不够理想，在 Dada2.0 发布 1 年多后，同样使用 2.0 的另一支国际化电商团队，自研了一款发布平台 - Lago 平台
+
+#### Lago 平台的优势
+
+&emsp;&emsp;Lago 平台吸取了前人的经验，对发布平台的架构进行了重新设计，使得前端团队对发布的掌控度达到了空前的高度
+
+&emsp;&emsp;Lago 在集团网络架构的位置：
+
+![image](https://img.alicdn.com/imgextra/i1/O1CN01kiMqsD1nbW4NC4Yjz_!!6000000005108-0-tps-2652-1396.jpg)
+
+&emsp;&emsp;对比 DaDa2.0 来说，简单的示意图如下：
+
+![image](https://img.alicdn.com/imgextra/i4/O1CN01IMiwNz1lZ6kn5nvMt_!!6000000004832-0-tps-2126-774.jpg)
+
+&emsp;&emsp;架构上的改变带来了 2 点主要优势
+
+&emsp;&emsp;**1、由中台团队掌管的 Java 应用变成了业务方自己的前端团队掌握的 Node 应用：**
+
+&emsp;&emsp;&emsp;&emsp;a. 从此三方合作变成了前端团队与 lago 团队的两方合作，大大减少了沟通成本；
+
+&emsp;&emsp;&emsp;&emsp;b. 由于 Node 应用的出现，前端团队拥有了后端的力量，诸如服务端渲染、用户权限控制、页面重定向、多语言实时更新等能力都能够自由开发，从此不求人，前端团队的能力范围及研发效率有了质的提升
+
+&emsp;&emsp;**2、Lago 平台替代了 DaDa 平台，Lago 平台针对 DaDa 平台的缺陷进行了针对性的改进，并且将前端所需的发布平台能力进行了大量扩充：**
+
+&emsp;&emsp;&emsp;&emsp;a. 诸如新增了页面灰度的能力，能够并行国家、百分比、白名单三种方式进行灰度；
+
+&emsp;&emsp;&emsp;&emsp;b. HTML 模版完全自定义，还可创建多个模版，不同页面使用不同的模版；
+
+&emsp;&emsp;&emsp;&emsp;c. 可创建 OSC 配置，一个给运营同学用的配置功能，会生成一个 JSON 文件自动注入到页面中，通常配置一些正则、页面组件等；
+
+&emsp;&emsp;&emsp;&emsp;d. Npm 依赖包管理，一般来说 Npm 包的版本是写在源码的 package.json 里的，一旦打包就把代码合并进了源码无法改变了，这个包管理可以在 Lago 平台动态的改变包版本，而无需重新发布代码，当然源码也要进行适当的改造，动态引入 Npm 包；
+
+&emsp;&emsp;&emsp;&emsp;e. 新增子站点功能，能够自由增加四级域名
+
+&emsp;&emsp;&emsp;&emsp;f. 优化了内部的发布链路，发布预发环境和线上环境时几乎可以做到秒发
+
+&emsp;&emsp;&emsp;&emsp;g. 增加了回滚功能，所有能发布的全局变量、模版、Npm 包、页面都能够回滚
+
+![image](https://img.alicdn.com/imgextra/i1/O1CN01QeVjeR1M50KLEuKsR_!!6000000001382-0-tps-3308-2158.jpg)
+![image](https://img.alicdn.com/imgextra/i2/O1CN01i5EY3E1XeEZ8lom4v_!!6000000002948-0-tps-3308-2158.jpg)
+![image](https://img.alicdn.com/imgextra/i1/O1CN01EyuVrM1Whbs2V5S0m_!!6000000002820-0-tps-3308-2158.jpg)
+![image](https://img.alicdn.com/imgextra/i2/O1CN01l1Rrlo1F3u3yVsjrc_!!6000000000432-0-tps-3308-2158.jpg)
+![image](https://img.alicdn.com/imgextra/i3/O1CN01pEzHst1YDxSd5D9D3_!!6000000003026-0-tps-3308-2158.jpg)
+
+#### 迁移的成果
