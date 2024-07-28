@@ -48,8 +48,6 @@
 
 ### 成交率 A/B 测试数据
 
-![image](https://img.alicdn.com/imgextra/i4/O1CN01rEABaq1Kl1QnhqhUO_!!6000000001203-0-tps-3274-1788.jpg)
-
 ![image](https://img.alicdn.com/imgextra/i4/O1CN01CHBl5F1VWKV1dD64a_!!6000000002660-0-tps-986-1686.jpg)
 
 &emsp;&emsp;经过线上 1%流量的验证，发现 Mobiles & Tablets 和 Sports & Outdoors 类别的成交率增长明显，分别从 1.79%提升至 3.61%，2.19%提升至 4.15%
